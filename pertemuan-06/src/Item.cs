@@ -38,10 +38,10 @@ public class Item
 
     // TODO(Level 5): jadikan `virtual`; override di Buku/Majalah/Dvd dengan
     //   MEMANGGIL versi induk lewat base.Deskripsi() lalu menambahkan detailnya.
-    public string Deskripsi()
+    public virtual string Deskripsi()
     {
         // TODO(Level 5): kembalikan "[<Judul>]" -- mis. "[Bumi Manusia]".
-        throw new NotImplementedException("Level 5 belum diimplementasikan");
+        return $"[{Judul}]";
     }
 
     public override string ToString()
